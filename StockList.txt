@@ -1,0 +1,18 @@
+154 100.000000 5
+Cheese
+PriceMart
+155 100.000000 5
+Juice
+Price
+155 100.000000 5
+Club
+156
+100 0.000000 5
+Toilet
+Paper
+100 0.000000 5
+Xtrafoods
+Paper
+0 0.000000 0
+
+
