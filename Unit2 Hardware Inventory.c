@@ -63,11 +63,10 @@ void enqueue(Queue * q, struct Stock stock) {
 }          
 
 struct Stock dequeue(Queue * q) {
-	struct stock n;
+	struct Stock n;
 	Node *temp;
 	if (isEmpty(q)) {
-		cout << "Queue is empty." << endl;
-		return -999;
+		printf("Queue is empty.");
 	}
 	n = q->front->data;
 	temp = q->front;
@@ -79,11 +78,10 @@ struct Stock dequeue(Queue * q) {
 }
 
 struct Stock peek(Queue * q) {
-	struct stock n;
+	struct Stock n;
 	Node *top;
 	if (isEmpty(q)) {
-		cout << "Queue is empty." << endl;
-		return -999;
+		printf("Queue is empty.");
 	}
 	n = q->front->data;
 	return n;
@@ -105,10 +103,16 @@ int readData(){
         stocks[i].costP=cPrice;
         stocks[i].amt=amt;
         strcpy(stocks[i].name,name);
-        strcpy(stocks[i].supplier);
+        strcpy(stocks[i].supplier,supplier);
         i++;
     }
     fclose(fp);
     return i;
 }
 
+int main(){
+	int i=0;
+	i=readData();
+	printf("Amount of Items : %d",i);
+	return 0;
+}
